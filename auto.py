@@ -8,7 +8,9 @@ ctrl = Controller()
 
 while True:
     x, y = pyautogui.position()
-    print("script [OFF]     ",x,y, end="\r")
+    print("script [OFF]     \n",x,y, end="\r")
+    print("\x1b[1F", end="\r")
+    
     while kb.is_pressed('r'):
 
         time.sleep(0.001)
@@ -22,5 +24,6 @@ while True:
 
 
         x, y = pyautogui.position()
-        print("script [ON]      ",x,y, end="\r")
+        print("script [ON]     \n",x,y, end="\r")
+        print("\x1b[1F", end="\r")
 
