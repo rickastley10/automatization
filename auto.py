@@ -26,4 +26,4 @@ while True:
         x, y = pyautogui.position()
         print("script [ON]     \n",x,y, end="\r")
         print("\x1b[1F", end="\r")
-
+    time.sleep(1)
